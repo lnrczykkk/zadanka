@@ -1,0 +1,15 @@
+def remove_char_at_index(original_string, n):
+    przed = original_string[:n]
+    po = original_string[n+1:]
+    nowy = przed + po
+    return nowy
+
+input_string = input("Wpisz cokolwiek\n")
+max_dlug = len(input_string) - 1
+index_remo =input(f"Wpisz cyfre od 0 do {max_dlug}:\n")
+index_removed = int(index_remo)
+result = remove_char_at_index(input_string,index_removed)
+print(result)
+
+
+
