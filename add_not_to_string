@@ -1,0 +1,13 @@
+#Given a string, return a new string where "not " has been added to the front.
+# However, if the string already begins with "not", return the string unchanged.
+
+def add_not_to_string (original_string):
+    if original_string.startswith("not"):
+        return original_string
+    else:
+        return "not " + original_string
+
+
+tekst = "horny"
+result = add_not_to_string(tekst)
+print(result)
