@@ -1,0 +1,14 @@
+#Given a string, return a new string where the first and last chars have been exchanged.
+
+def zamiana(input_string):
+    if len(input_string) <= 1:
+        return input_string
+
+    first = input_string[0]
+    mid = input_string[1:-1]
+    last = input_string[-1]
+    return last + mid + first
+
+tekst = input("Wpisz cokolwiek\n")
+od_tylu = zamiana(tekst)
+print(od_tylu)
