@@ -1,0 +1,21 @@
+#Given a string and a non-negative int n, return a larger string that is n copies of the original string.
+
+def tylko_dodatnie():
+    while True:
+        user_input = input("Wpisz jakakolwiek cyfre\n")
+        if user_input.isdigit() and int(user_input) > 0:
+            return user_input
+        else:
+            print("Coś jest nie tak typeczku")
+
+def mnoznik (s,n):
+    if n < 0:
+        raise ValueError ("n nie musi byc wieksze od zera")
+    else:
+        return s*n
+
+tekscik = input("Wpisz jakikolwiek tekst\n")
+n = tylko_dodatnie()
+d = int(n)
+result = tekscik * d
+print(result)
