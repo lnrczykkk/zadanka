@@ -1,0 +1,26 @@
+#Given a string and a non-negative int n, we'll say that the front of the string is the first 3 chars, or whatever is there
+# if the string is less than length 3. Return n copies of the front;
+
+
+
+def tylko_dodatnie():
+    while True:
+        user_input = input("Wpisz jakakolwiek cyfre\n")
+        if user_input.isdigit() and int(user_input) > 0:
+            return user_input
+        else:
+            print("Coś jest nie tak typeczku")
+
+def tylko3(str,n):
+    front =str[:3]
+    if n <= 1:
+        return "Zwiększ liczbe n\n"
+    else:
+        return front*n
+
+tekst = input("Wpisz dowolny tekst\n")
+d = tylko_dodatnie()
+n = int(d)
+x = tylko3(tekst,n)
+
+print(x)
