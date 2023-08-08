@@ -1,0 +1,15 @@
+def abba(a,b):
+    if isinstance(a, str) and isinstance(b, str):
+        result = a + b + b + a
+        return result
+    else:
+        return "Oba lub jeden z argumentów nie jest stringiem"
+
+pierwszy = input("Wpisz pierwsza fraze\n")
+drugi = input("Wpisz druga fraze\n")
+zwrot = abba(pierwszy,drugi)\
+
+if pierwszy.isdigit() or drugi.isdigit() :
+    print("Oba lub jeden z argumentów nie jest stringiem")
+else:
+    print(zwrot)
