@@ -1,0 +1,15 @@
+#Given an array of ints, return True if the sequence of numbers 1, 2, 3 appears in the array somewhere.
+
+def czy_jest(numerki):
+    for i in range(len(numerki)-2):
+        if numerki[i] == 1 and numerki[i+1] == 2 and numerki[i+2] == 3:
+            return True
+    return False
+
+
+tabelito = [4,5,1,2,3]
+result = czy_jest(tabelito)
+if result:
+    print("pies")
+else:
+    print("cie jebal")
