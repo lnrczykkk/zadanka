@@ -1,0 +1,15 @@
+#Given an array of ints, return the number of 9's in the array.
+
+
+def czy_jest_9(nums,target):
+    if target in nums[:4]:
+        return True
+    return False
+
+dj = [1,1,1,2,1,1,5,1,9]
+numer = 9
+result = czy_jest_9(dj,numer)
+if result:
+    print("pies cie jebal")
+else:
+    print("pies cie jebal w pizde")
