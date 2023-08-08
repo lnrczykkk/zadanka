@@ -1,0 +1,12 @@
+#Given a non-empty string like "Code" return a string like "CCoCodCode".
+
+def literaki(user_str):
+    result = ""
+    for i in range(len(user_str)):
+        result += user_str[:i+1]
+    return result
+
+tekst = input("Type anything\n")
+user_str2 = tekst
+zmienione = literaki(user_str2)
+print(zmienione)
