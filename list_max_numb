@@ -1,0 +1,9 @@
+def list_max_numb(num_list):
+    if len(num_list) == 3:
+        max_value = max(num_list)
+        return [max_value, max_value,max_value]
+    return False
+
+listewka = [1, 5, 9]
+result = list_max_numb(listewka)
+print(result)
