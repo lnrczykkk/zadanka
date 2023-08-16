@@ -1,0 +1,8 @@
+def rotate_reverse(array):
+    if len(array) == 3:
+        return [array[2], array[1], array[0]]
+    return "Za krótkie byku"
+
+arra = [2,5,7]
+revers_arra = rotate_reverse(arra)
+print(revers_arra)
