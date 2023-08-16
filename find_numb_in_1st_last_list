@@ -1,0 +1,10 @@
+def find_numb(list,numerek):
+    if len(list) >= 1:
+        return list[0] == numerek or list[-1] == numerek
+    return False
+
+lista = [1,2,3,4,6,5]
+numerek = 6
+result = find_numb(lista,numerek)
+
+print(result)
