@@ -1,0 +1,8 @@
+def sum_2_elements(nums):
+    if len(nums) <= 1: 
+        return False
+    return sum([nums[0], nums[1]]) 
+
+arra = [7, 4,5,5,7,9]
+result = sum_2_elements(arra)
+print(result)
