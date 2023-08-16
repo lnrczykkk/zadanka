@@ -1,0 +1,11 @@
+def middle_way(a,b):
+    if len(a) == 3 and len(b) == 3:
+        nowy_mid = [a[1],b[1]]
+        return nowy_mid
+    return "Nie kurwa"
+
+pierw = [1,2,3]
+drug = [3,7,9]
+
+result = middle_way(pierw,drug)
+print(result)
