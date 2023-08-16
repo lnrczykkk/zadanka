@@ -1,0 +1,12 @@
+def sum_array(array):
+    if len(array) == 3:
+        return sum(array)
+    else:
+        raise ValueError("Array lenght must be 3")
+
+arra = [2,4,4,4]
+try:
+    result = sum_array(arra)
+    print(result)
+except ValueError as e:
+    print(e)
