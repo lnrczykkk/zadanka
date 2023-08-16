@@ -1,0 +1,6 @@
+def has23(nums):
+    return 2 in nums or 3 in nums
+
+lista = [1,0,5]
+result = has23(lista)
+print(result)
