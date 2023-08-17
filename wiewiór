@@ -1,0 +1,11 @@
+def wiewiór(weekday,cygara):
+
+    if weekday >= 4 and weekday <= 6 and cygara >= 40:
+        return True
+    elif weekday >= 0 and weekday <= 3 and cygara >= 40 and cygara <= 60:
+        return True
+    return False
+dzien = 2
+cyga = 40
+result = wiewiór(dzien,cyga)
+print(result)
