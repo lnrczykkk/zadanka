@@ -1,0 +1,17 @@
+def mandat(predkosc, its_birthday):
+    if its_birthday:
+        predkosc_limit = predkosc + 5
+    else:
+        predkosc_limit = predkosc
+
+    if predkosc_limit <= 60:
+        return "Brak mandatu"
+    elif 61 <= predkosc_limit <= 80:
+        return "Mały mandat"
+    elif 81 <= predkosc_limit:
+        return "Duży mandat"
+
+print(mandat(61,True))
+
+
+#tu nie wiem czy to dziala
