@@ -1,0 +1,11 @@
+def love6(a,b):
+    diff =  abs(a - b)
+    suma = a + b
+    if a == 6 or b == 6 or diff == 6 or suma == 6:
+        return True
+    return False
+
+jedn = 2
+dwa = 8
+result = love6(jedn,dwa)
+print(result)
