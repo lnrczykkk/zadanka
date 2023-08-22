@@ -1,0 +1,12 @@
+def nadgodziny(hours):
+    if hours <= 40:
+        return True
+    if hours >= 40:
+        return False
+
+godzinki = int(input("Wpisz ilość godzinek\n"))
+sprnadg = nadgodziny(godzinki)
+if sprnadg == True:
+    print(godzinki * 15)
+else:
+    print(godzinki * 10)
