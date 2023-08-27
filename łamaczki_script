@@ -1,16 +1,16 @@
-def equal_split_with_odds_and_tax(stake, odds, tax_rate=0.12):
+def equal_split_with_odds_and_tax(stake, odds):
     total_odds = sum(odds)
     parts = []
 
     for odd in odds:
         potential_part_stake = (odd/total_odds * stake)
-        part_stake_after_tax = potential_part_stake * (1-tax_rate)
+        part_stake_after_tax = potential_part_stake
         parts.append(part_stake_after_tax)
 
     return parts
 
 
-stake_to_split = 12
-odds = [25, 50]
+stake_to_split = 10
+odds = [23, 80]
 result = equal_split_with_odds_and_tax(stake_to_split,odds)
 print(result)
